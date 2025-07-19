@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Досье: Никита Ваневский</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2d1b3d;
+            background: linear-gradient(135deg, #f8f6ff 0%, #f0ebff 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #6b46c1 0%, #9333ea 100%);
+            color: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(107, 70, 193, 0.3);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(107, 70, 193, 0.1);
+            border: 1px solid rgba(147, 51, 234, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .section h2 {
+            font-size: 2.2rem;
+            color: #6b46c1;
+            margin-bottom: 30px;
+            font-weight: 700;
+            border-bottom: 3px solid #9333ea;
+            padding-bottom: 10px;
+        }
+
+        .info-item {
+            background: linear-gradient(135deg, #faf7ff 0%, #f3f0ff 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #9333ea;
+            margin-bottom: 20px;
+        }
+
+        .info-item strong {
+            color: #6b46c1;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .source {
+            font-size: 0.85rem;
+            color: #7c3aed;
+            font-style: italic;
+            background: rgba(124, 58, 237, 0.1);
+            padding: 8px 12px;
+            border-radius: 6px;
+            border-left: 3px solid #7c3aed;
+            margin-top: 10px;
+        }
+
+        .rule-item {
+            background: linear-gradient(135deg, #ffffff 0%, #faf7ff 100%);
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .rule-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #9333ea, #6b46c1);
+            border-radius: 12px;
+            z-index: -1;
+            margin: -2px;
+        }
+
+        .rule-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(107, 70, 193, 0.2);
+        }
+
+        .rule-item h3 {
+            color: #6b46c1;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .quote {
+            background: linear-gradient(135deg, #f8f6ff 0%, #ede9ff 100%);
+            border-left: 5px solid #9333ea;
+            padding: 20px 25px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            position: relative;
+        }
+
+        .quote::before {
+            content: '"';
+            position: absolute;
+            top: -5px;
+            left: 15px;
+            font-size: 3rem;
+            color: #9333ea;
+            opacity: 0.3;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(135deg, #9333ea 0%, #6b46c1 100%);
+            margin: 40px 0;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 20px 10px;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Досье: Никита Ваневский</h1>
+        </div>
+
+        <div class="section">
+            <h2>Краткая справка</h2>
+            
+            <div class="info-item">
+                <strong>Кто:</strong> Никита Ваневский, 30 лет, действующий предприниматель и экс-владелец строительной компании
+                <div class="source">Источник: Видео с вакансии hh, 0:32-0:43; Подкаст AFROMARI, 0:25-0:48</div>
+            </div>
+
+            <div class="info-item">
+                <strong>Чем занимается сейчас:</strong> Запускает новое направление по коучингу и консалтингу для предпринимателей с нуля
+                <div class="source">Источник: Вакансия Ассистента на hh; Видео с вакансии hh, 0:59-1:03</div>
+            </div>
+
+            <div class="info-item">
+                <strong>Прошлый опыт:</strong> Экс-владелец компании по дизайну интерьеров и ремонту квартир LEBREN. В прошлом году выручка 120 млн, 30-50 сотрудников, 50-70 ремонтов параллельно. Компанию выстраивал с нуля, последние 2,5 года управлял удалённо
+                <div class="source">Источник: Видео с вакансии hh, 0:32-0:52; Видео "Что я чувствую", 0:15-0:28</div>
+            </div>
+
+            <div class="info-item">
+                <strong>Где живёт/работает:</strong> Полностью удалённая работа, последние 2 года в эмиграции, путешествует (был в Занзибаре, на Бали, едет в Грузию)
+                <div class="source">Источник: Подкаст AFROMARI, 1:00-1:05; Видео "После Бали", 1:13-1:15</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2>10 главных правил для эффективной работы с Никитой Ваневским</h2>
+            
+            <div class="rule-item">
+                <h3>1. Готовьтесь к высокой интенсивности и стрессоустойчивости</h3>
+                <div class="quote">Это не самая простая позиция. Она достаточно стрессоустойчивая. Чем более сильным предпринимателем вы работаете, тем более сложные задачи вам будут поручать</div>
+                <div class="source">Источник: Видео с вакансии hh, 1:44-1:53</div>
+            </div>
+
+            <div class="rule-item">
+                <h3>2. Фокус на результат и системность превыше всего</h3>
+                <div class="quote">Для меня ключевая история — это собрать идеальную картину по каждому направлению. Мне нужно хотя бы въехать, что я хочу</div>
+                <div class="source">Источник: Подкаст AFROMARI, 12:50-12:56</div>
+            </div>
+
+            <div class="rule-item">
+                <h3>3. Будьте готовы к большому объёму разноплановых задач</h3>
+                <p>Два основных направления работы: развитие личного бренда (Telegram-канал, возможно Instagram) и операционная поддержка (поиск жилья, досуговых мероприятий, ведение календаря)</p>
+                <div class="source">Источник: Видео с вакансии hh, 2:19-4:15</div>
+            </div>
+
+            <div class="rule-item">
+                <h3>4. Освойте работу с ИИ-инструментами</h3>
+                <div class="quote">Здесь вам супер понадобится пользование чатом GPT или там Perplexity</div>
+                <div class="source">Источник: Видео с вакансии hh, 4:07-4:09; Вакансия Ассистента на hh</div>
+            </div>
+
+            <div class="rule-item">
+                <h3>5. Инициативность и проактивность критически важны</h3>
+                <div class="quote">В первую очередь я ищу человека проактивного и инициативного, который сам может увидеть точки роста и сам может поставить себе задачи</div>
+                <div class="source">Источник: Вакансия Ассистента на hh</div>
+            </div>
+
+            <div class="rule-item">
+                <h3>6. Готовьтесь к постоянному обучению и развитию</h3>
+                <div class="quote">По части обучений я супер включён в то, чтобы у вас получалось. В Брен мы покупали сотрудникам разные курсы и за 500.000 руб., и за миллион рублей</div>
+                <div class="source">Источник: Видео с вакансии hh, 3:34-3:42</div>
+            </div>
+
+            <div class="rule-item">
+                <h3>7. Быстрота реакции и соблюдение дедлайнов</h3>
+                <div class="quote">Быть на связи в рабочее время, оперативно отвечать руководителю в течение 30 минут</div>
+                <div class="source">Источник: Вакансия Ассистента на hh</div>
+            </div>
+
+            <div class="rule-item">
+                <h3>8. Понимайте принцип «я то, что я делаю каждый день»</h3>
+                <p>Никита живёт привычками: 8 лет ведёт трекер привычек, системно подходит к зарядке, медитациям, дыхательным практикам</p>
+                <div class="source">Источник: Подкаст AFROMARI, 7:07-7:14; 32:15-33:00</div>
+            </div>
+
+            <div class="rule-item">
+                <h3>9. Готовьтесь к интенсивной стажировке</h3>
+                <p>Стажировка длится 3 дня с большим количеством разноплановых задач.</p>
+                <div class="quote">Ваша задача следующие три дня стажировки ассистента сделать так, чтобы он прям охерел от задач, но выжил</div>
+                <div class="source">Источник: Видео с вакансии hh, 5:07-5:21; Видео "Как нанять ассистента", 41:02-41:10</div>
+            </div>
+
+            <div class="rule-item">
+                <h3>10. Перспектива роста — от ассистента до заместителя/партнёра</h3>
+                <div class="quote">В идеале, чтобы ты за 4-8 месяцев вырос в полноценного заместителя, с кем мы будем вместе развивать этот проект. Карьерный трек на 5 лет, ты пройдёшь за 1.5-2 года</div>
+                <div class="source">Источник: Вакансия Ассистента на hh; Видео с вакансии hh, 1:56-2:07</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2>Дополнительные важные особенности</h2>
+            
+            <div class="info-item">
+                <strong>Стиль общения:</strong> Прямой, без лишних эмоций, системный.
+            </div>
+
+            <div class="info-item">
+                <strong>Текущие проекты:</strong> Запуск курса с подругой Светой по «определению главного» для женской аудитории, развитие ТГ-канала, консультации по персональной стратегии
+                <div class="source">Источник: Видео "После Бали", 2:13-2:39</div>
+            </div>
+
+            <div class="info-item">
+                <strong>Важное для понимания:</strong> Сейчас находится в периоде перезапуска после выхода из предыдущего бизнеса, исследует новые направления в неопределённости
+                <div class="source">Источник: Видео с вакансии hh, 2:36-2:50</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
